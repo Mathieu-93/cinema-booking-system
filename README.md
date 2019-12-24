@@ -15,11 +15,11 @@ Feel free to clone repository
 1. Install git aplication ->https://git-scm.com/download/ 
 2. Use GIT BASH
 3. Local command:
-  -git add (whatever file you wnt to add) / -git add . (ALL)
-  -git commit -m "Please leave me a message"
+  - git add (whatever file you wnt to add) / -git add . (ALL)
+  - git commit -m "Please leave me a message"
    Global:
-  -git push <- you push file to repository 
-  -git pull <- updated your previous rep
+  - git push <- you push file to repository 
+  - git pull <- updated your previous rep
 4. Cheack your modification-> git status
   - if file is UNTRACKED it's mean that it is not ready to be committed you should add first
 5. Branching:
