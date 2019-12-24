@@ -17,8 +17,7 @@ Feel free to clone repository
 3. Local command:
   - git add (whatever file you wnt to add) / -git add . (ALL)
   - git commit -m "Please leave me a message"
-  
-   Global:
+4.Global command:
   - git push <- you push file to repository 
   - git pull <- updated your previous rep
 4. Cheack your modification-> git status
@@ -29,7 +28,7 @@ Feel free to clone repository
   - git cheakout feature1 <-switch branch
   - git merge master <-pull reuest
   
-  example How to make some commits and merge it back into master: 
+  EXAMPLE How to make some commits and merge it back into master: 
   
   git checkout master
   
