@@ -17,12 +17,13 @@ Feel free to clone repository
 3. Local command:
   - git add (whatever file you wnt to add) / -git add . (ALL)
   - git commit -m "Please leave me a message"
+  
 4.Global command:
   - git push <- you push file to repository 
   - git pull <- updated your previous rep
-4. Cheack your modification-> git status
+5. Cheack your modification-> git status
   - if file is UNTRACKED it's mean that it is not ready to be committed you should add first
-5. Branching:
+6. Branching:
   - git branch <-cheack
   - git branch feature1 <-new branch
   - git cheakout feature1 <-switch branch
@@ -46,6 +47,6 @@ Feel free to clone repository
   
   git merge new-branch
   
-6.When you solve the conflict you must repeat all precedure git all/commit/push but in commit there will be a message window to leave press:
+7.When you solve the conflict you must repeat all precedure git all/commit/push but in commit there will be a message window to leave press:
   - (ESC) :wq
  
