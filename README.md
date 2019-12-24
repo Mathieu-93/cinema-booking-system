@@ -18,7 +18,7 @@ Feel free to clone repository
   - git add (whatever file you wnt to add) / -git add . (ALL)
   - git commit -m "Please leave me a message"
   
-Global:
+   Global:
   - git push <- you push file to repository 
   - git pull <- updated your previous rep
 4. Cheack your modification-> git status
@@ -32,12 +32,19 @@ Global:
   example How to make some commits and merge it back into master: 
   
   git checkout master
-  git branch new-branch 
+  
+  git branch new-branch
+  
   git checkout new-branch
+  
  ...Develop some code...
+ 
   git add -A
+  
   git commit -m "some commit message"
+  
   git checkout master <-Note that git merge merges the specified branch into the currently active branch
+  
   git merge new-branch
   
 6.When you solve the conflict you must repeat all precedure git all/commit/push but in commit there will be a message window to leave press:
