@@ -17,7 +17,7 @@ Feel free to clone repository
 3. Local command:
   -git add (whatever file you wnt to add) / -git add . (ALL)
   -git commit -m "Please leave me a message"
-   Global :
+   Global:
   -git push <- you push file to repository 
   -git pull <- updated your previous rep
 4. Cheack your modification-> git status
