@@ -13,7 +13,9 @@ class Film {
 
 
 public:
-	Film();
+	Film() ;
+	Film(char t_tytul[]) ;
+
 	void wybierz_miejsce();
 	void wyswietl_wszystkie_miejsca();
 	void wyswietl_wolne_miejsca();
@@ -21,5 +23,8 @@ public:
 	void dodaj_rezerwacje();
 	void anuluj_rezerwacje();
 	void sprawdz_miejsce();
+	void wyczysc_miejsce();
+
+	void czekaj_na_klawisz();
 
 };

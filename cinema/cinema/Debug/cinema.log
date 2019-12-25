@@ -1,0 +1,76 @@
+﻿  main.cpp
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C3646: "wszystkie_miejsca": nieznany specyfikator przesłonięcia
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2143: błąd składniowy: brakuje „,” przed „[”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2143: błąd składniowy: brakuje „)” przed „;”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+  Miejsce.cpp
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\miejsce.cpp(10): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\miejsce.cpp(11): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\miejsce.cpp(19): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\miejsce.cpp(20): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\miejsce.cpp(50): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\miejsce.cpp(51): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+  Kino.cpp
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.h(9): error C3646: "wszystkie_filmy": nieznany specyfikator przesłonięcia
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.h(9): error C2143: błąd składniowy: brakuje „,” przed „[”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.h(9): error C2143: błąd składniowy: brakuje „)” przed „;”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.h(9): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C3646: "wszystkie_miejsca": nieznany specyfikator przesłonięcia
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2143: błąd składniowy: brakuje „,” przed „[”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2143: błąd składniowy: brakuje „)” przed „;”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(18): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(51): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(51): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(64): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(64): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(65): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(65): error C2228: po lewej ".wyswietl_wszystkie_miejsca" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(75): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(75): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(76): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(76): error C2228: po lewej ".wyswietl_wolne_miejsca" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(86): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(86): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(87): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(87): error C2228: po lewej ".wyswietl_zarezerwowane_miejsca" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(99): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(99): error C2228: po lewej ".dodaj_rezerwacje" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(112): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(112): error C2228: po lewej ".anuluj_rezerwacje" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(125): error C2065: "wszystkie_filmy": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\kino.cpp(125): error C2228: po lewej ".sprawdz_miejsce" musi być typ struct/union
+  Film.cpp
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C3646: "wszystkie_miejsca": nieznany specyfikator przesłonięcia
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2143: błąd składniowy: brakuje „,” przed „[”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2143: błąd składniowy: brakuje „)” przed „;”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.h(12): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(17): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(11): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(29): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(23): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: zobacz deklarację „strcpy”
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(54): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(54): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(67): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(67): error C2228: po lewej ".jestZarezerwowane" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(69): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(69): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(84): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(84): error C2228: po lewej ".jestZarezerwowane" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(86): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(86): error C2228: po lewej ".wypisz" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(102): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(102): error C2228: po lewej ".rezerwuj" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(118): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(118): error C2228: po lewej ".anuluj_rezerwacje" musi być typ struct/union
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(130): error C2065: "wszystkie_miejsca": niezadeklarowany identyfikator
+c:\users\mateusz ogonowski\documents\git\cinema-booking-system\cinema\cinema\film.cpp(130): error C2228: po lewej ".wypisz" musi być typ struct/union
+  Generowanie kodu...
