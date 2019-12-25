@@ -1,4 +1,5 @@
 # Cinema booking system
+## Created by Mateusz Ogonowski and Karol Greń
 This repository contains classes for a cinema booking system.
 User can select movie,room, time, seats and place order. 
 The system includes following object: movie,room, track(in which room when which movie is showing), seat, user, order(a user
