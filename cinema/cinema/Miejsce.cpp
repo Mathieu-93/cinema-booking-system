@@ -1,56 +1,42 @@
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 #include"Miejsce.h"
 
 
 using namespace std;
 
-Miejsce::Miejsce()
-{
-	strcpy(imie, "");
-	strcpy(nazwisko, "");
+Miejsce::Miejsce(string imie, string nazwisko, int numer, bool zarezerwowane) :m_imie{ imie }, m_nazwisko{ nazwisko }, m_numer{ numer }, m_zarezerwowane{ zarezerwowane }{}
 
-	numer = 0;
-	zarezerwowane = false;
-}
-
-Miejsce::Miejsce(char t_imie[], char t_nazwisko[], int t_numer, bool t_zarezerwowane)
-{
-	strcpy(imie, t_imie);
-	strcpy(nazwisko, t_nazwisko);
-
-	numer = t_numer;
-	zarezerwowane = t_zarezerwowane;
-}
 
 void Miejsce::rezerwuj()
 {
-	if (zarezerwowane)
+	if (m_zarezerwowane)
 	{
 		cout << "Miejsce jest juz zarezerwowane.";
 	}
 	else
 	{
 		cout << "Podaj imie: ";
-		cin >> imie;
+		cin >> m_imie;
 
 		cout << "Podaj nazwisko: ";
-		cin >> nazwisko;
+		cin >> m_nazwisko;
 
-		zarezerwowane = true;
+		m_zarezerwowane = true;
 
-		cout << endl << "Miejsce " << numer << " zostalo zarezerwowane dla: " << imie << " " << nazwisko << ".";
+		cout << endl << "Miejsce " << m_numer << " zostalo zarezerwowane dla: " << m_imie << " " << m_nazwisko << ".";
 	}
 }
 
 void Miejsce::anuluj_rezerwacje()
 {
-	if (zarezerwowane)
+	if (m_zarezerwowane)
 	{
-		strcpy(imie, "");
-		strcpy(nazwisko, "");
+		m_imie = "";
+		m_nazwisko = "";
 
-		zarezerwowane = false;
+		m_zarezerwowane = false;
 		cout << "Rezerwacja anulowana." << endl;
 	}
 	else
@@ -61,17 +47,17 @@ void Miejsce::anuluj_rezerwacje()
 
 void Miejsce::wypisz() // funkcja wypisuj¹ca
 {
-	if (zarezerwowane)
+	if (m_zarezerwowane)
 	{
-		cout << "Numer: " << numer << ", " << imie << " " << nazwisko << endl;
+		cout << "Numer: " << m_numer << ", " << m_imie << " " << m_nazwisko << endl;
 	}
 	else
 	{
-		cout << "Numer: " << numer << " - miejsce wolne" << endl;
+		cout << "Numer: " << m_numer << " - miejsce wolne" << endl;
 	}
 }
 
 bool Miejsce::jestZarezerwowane()
 {
-	return zarezerwowane;
+	return m_zarezerwowane;
 }

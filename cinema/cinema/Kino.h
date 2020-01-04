@@ -1,19 +1,26 @@
 #pragma once
+#ifndef Kino
+
+#include <iostream>
+#include <string>
+#include "Film.h"
+
 
 
 class Kino {
 
 private:
-	static const int ilosc_filmow = 5;
-	int wybrany_film;
-	Film wszystkie_filmy[ilosc_filmow];
-	int ilosc_dodanych_filmow;
+
+	static const int m_ilosc_filmow = 5;
+	int m_wybrany_film;
+
+	Film wszystkie_filmy[m_ilosc_filmow];
+	int m_ilosc_dodanych_filmow;
 
 public:
 
-	Kino();
-
-	void dodaj_film(char t_tytul[]);
+	Kino(int wybrany_film = 0, int ilosc_dodanych_filmow = 0);
+	void dodaj_film(string t_tytul);
 	void wybierz_film();
 	void wyswietl_wszystkie_filmy();
 	void wyswietl_wszystkie_miejsca();
@@ -23,3 +30,5 @@ public:
 	void anuluj_rezerwacje();
 	void sprawdz_miejsce();
 };
+
+#endif // !Kino
