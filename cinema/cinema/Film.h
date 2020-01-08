@@ -11,7 +11,7 @@ using namespace std;
 class Film {
 private: 
 	string m_tytul;
-	static const int m_ilosc_miejsc = 30;
+	static const int m_ilosc_miejsc = 51;
 	int m_wybrane_miejsce;
 	Miejsce wszystkie_miejsca[m_ilosc_miejsc];
 
@@ -24,6 +24,7 @@ public:
 	void wyswietl_wszystkie_miejsca();
 	void wyswietl_wolne_miejsca();
 	void wyswietl_zarezerwowane_miejsca();
+	void wyswietl_wszystkie_miejsca2();
 	void dodaj_rezerwacje();
 	void anuluj_rezerwacje();
 	void sprawdz_miejsce();

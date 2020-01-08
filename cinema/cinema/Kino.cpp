@@ -56,15 +56,11 @@ void Kino::wyswietl_wszystkie_filmy()
 	cout << endl << "Wszystkich filmow: " << m_ilosc_filmow << endl;
 }
 
+
 void Kino::wyswietl_wszystkie_miejsca()
 {
 	int i = 0;
-
-	for (i = i; i < m_ilosc_filmow; i++)
-	{
-		wszystkie_filmy[i].wypisz();
-		wszystkie_filmy[i].wyswietl_wszystkie_miejsca();
-	}
+	wszystkie_filmy[i].wyswietl_wszystkie_miejsca2();
 }
 
 void Kino::wyswietl_wolne_miejsca()
@@ -97,6 +93,7 @@ void Kino::dodaj_rezerwacje()
 	wybierz_film();
 
 	if (m_wybrany_film != 0) {
+		wszystkie_filmy[m_wybrany_film-1].wyswietl_wszystkie_miejsca2();
 		wszystkie_filmy[m_wybrany_film - 1].dodaj_rezerwacje();
 	}
 }

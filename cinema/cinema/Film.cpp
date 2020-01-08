@@ -51,6 +51,43 @@ void Film::wyswietl_wszystkie_miejsca()
 	cout << endl << "Wszystkich miejsc: " << m_ilosc_miejsc << endl;
 }
 
+void Film::wyswietl_wszystkie_miejsca2()
+{
+	int a;
+	a = 50;
+
+	cout << "____________________________________________________________________" << endl;
+	cout << "|                              EKRAN                               |" << endl;
+	cout << "____________________________________________________________________" << endl;
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << endl;
+
+
+		for (int j = 1; j < a+1; j++)
+
+		{
+			cout << " [ ";
+			if (wszystkie_miejsca[j].jestZarezerwowane())
+			{
+				cout << "Z";
+			}
+			else
+			{
+				cout << "W";
+			}
+			cout << " ] ";
+			if (j % 10 == 0 && j > 0 && j < 50)
+			{
+				cout << endl;
+				cout << "____________________________________________________________________";
+				cout << endl;
+			}
+		}
+	}
+
 void Film::wyswietl_wolne_miejsca()
 {
 	int i = 0;
@@ -89,7 +126,6 @@ void Film::dodaj_rezerwacje()
 {
 	cout << "Dodaj rezerwacje:" << endl << endl << endl;
 
-	wyswietl_wolne_miejsca();
 	wybierz_miejsce();
 
 	if (m_wybrane_miejsce != 0)
