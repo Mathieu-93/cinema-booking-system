@@ -25,7 +25,7 @@ void Miejsce::rezerwuj()
 
 		m_zarezerwowane = true;
 
-		cout << endl << "Miejsce " << m_numer << " zostalo zarezerwowane dla: " << m_imie << " " << m_nazwisko << ".";
+		cout << endl << "Miejsce " << m_numer-1 << " zostalo zarezerwowane dla: " << m_imie << " " << m_nazwisko << ".";
 	}
 }
 

@@ -69,6 +69,7 @@ void Film::wyswietl_wszystkie_miejsca2()
 		for (int j = 1; j < a+1; j++)
 
 		{
+			cout << j << ". ";
 			cout << " [ ";
 			if (wszystkie_miejsca[j].jestZarezerwowane())
 			{
@@ -131,7 +132,7 @@ void Film::dodaj_rezerwacje()
 
 	if (m_wybrane_miejsce != 0)
 	{
-		wszystkie_miejsca[m_wybrane_miejsce - 1].rezerwuj();
+		wszystkie_miejsca[m_wybrane_miejsce].rezerwuj();
 	}
 
 	czekaj_na_klawisz();

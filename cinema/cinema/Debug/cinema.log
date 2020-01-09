@@ -1,4 +1,3 @@
 ﻿  main.cpp
-  Film.cpp
-  Generowanie kodu...
+C:\Users\Karol\Desktop\P\C++\projekty\cinema-booking-system\cinema\cinema\main.cpp(98,7): warning C4101: "decyzja": lokalna zmienna, do której nie istnieje odwołanie
   cinema.vcxproj -> C:\Users\Karol\Desktop\P\C++\projekty\cinema-booking-system\cinema\Debug\cinema.exe
