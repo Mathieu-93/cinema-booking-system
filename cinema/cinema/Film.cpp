@@ -86,6 +86,7 @@ void Film::wyswietl_wszystkie_miejsca2()
 				cout << endl;
 			}
 		}
+		cout << endl;
 	}
 
 void Film::wyswietl_wolne_miejsca()
