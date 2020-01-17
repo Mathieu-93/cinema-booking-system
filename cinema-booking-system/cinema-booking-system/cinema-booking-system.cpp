@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include "Sit.hpp"
-#include "Movie.hpp"
+#include "Cinema.hpp"
 
 using namespace std;
 
@@ -17,21 +17,21 @@ void menu() {
 
 int main() {
 	Sit booking;
-	Movie* movie = new Movie;
+	Cinema* cinema = new Cinema;
 	int answer{ 0 };
 
 	do {
 		menu();
 		cin >> answer;
-		if (answer == 1) movie->addBooking();
-		else if (answer == 2) movie->cancelBooking();
-		else if (answer == 3) movie->checkBooking();
-		else if (answer == 4) movie->showCinemaHall();
-		else if (answer == 5) movie->showListOfViewers();
+		if (answer == 1) cinema->addBooking();
+		else if (answer == 2) cinema->cancelBooking();
+		else if (answer == 3) cinema->checkBooking();
+		else if (answer == 4) cinema->showCinemaHall();
+		else if (answer == 5) cinema->showListOfViewers();
 		else if (answer != 6) cout << "Try again, I do not know such an option.\n";
 	} while (answer != 6);
 
-	delete movie;
+	delete cinema;
 
 	return 0;
 }

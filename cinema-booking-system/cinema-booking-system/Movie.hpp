@@ -1,29 +1,21 @@
-#ifndef MOVIE_HPP
-#define MOVIE_HPP
+#ifndef CINEMA_HPP
+#define CINEMA_HPP
 
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Sit.hpp"
 #include "Client.hpp"
+#include "Cinema.hpp"
 
 class Movie {
 public:
 	Movie();
-	void showCinemaHall();
-	void pickYourSit(std::string, int&, int&);
-	void addBooking();
-	void cancelBooking();
-	void checkBooking();
-	void showListOfViewers();
-	void removeFromVector(Client);
+	void showFilms();
+	void pickYourfilm(std::string, int&, int&);
 
 private:
-	static const int rows{ 10 };
-	static const int nums{ 20 };
 
-	Sit cinema_hall[rows][nums];
-	std::vector <Client> listOfViewers;
 };
 
 #endif
