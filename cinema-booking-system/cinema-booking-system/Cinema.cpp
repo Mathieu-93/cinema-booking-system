@@ -19,7 +19,7 @@ void Cinema::pickYourFilm()
 	std::cout << "List of films: \n";
 		for (int i = 0; i < listOfFilms.size(); i++)
 		{
-			std::cout << "Film" << " " << i << ": " << listOfFilms[1].showMovie() << "\n";
+			std::cout << "Film" << " " << i << ": " << listOfFilms[i].nameOfMovie << "\n";
 		}
 
 	std::cout << "\n";
