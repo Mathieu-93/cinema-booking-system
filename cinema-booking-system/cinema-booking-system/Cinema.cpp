@@ -16,7 +16,7 @@ void Cinema::pickYourFilm()
 {
 	std::cout << "\n";
 	std::cout << "Please, enter the number of the film: \n";
-
+	int it = 0;
 	std::cin >> it;
 	while (1)
 	{
