@@ -37,7 +37,6 @@ void Sit::book() {
 		std::cout << "Surname has to be alphabetic, please try to book again" << std::endl;
 		throw wrongSurname;
 	}
-
 	setBooking(true);
 }
 

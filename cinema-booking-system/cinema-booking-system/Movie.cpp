@@ -73,6 +73,8 @@ void Movie::cancelBooking() {
 	removeFromVector(this->cinema_hall[row - 1][num - 1]);
 	this->cinema_hall[row - 1][num - 1].cancel();
 
+	std::cout << "Your seat has been canceled. \n";
+
 }
 
 void Movie::checkBooking() {
