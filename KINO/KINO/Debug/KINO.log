@@ -1,4 +1,9 @@
 ﻿  Cinema.cpp
-C:\Users\Karol\Desktop\KINO\KINO\Cinema.cpp(23,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Karol\Desktop\KINO\KINO\Cinema.cpp(40,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-  KINO.vcxproj -> C:\Users\Karol\Desktop\KINO\Debug\KINO.exe
+C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Cinema.cpp(23,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Cinema.cpp(40,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Client.cpp
+  main.cpp
+  Movie.cpp
+  Sit.cpp
+  Generowanie kodu...
+  KINO.vcxproj -> C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\Debug\KINO.exe
