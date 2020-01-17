@@ -77,7 +77,7 @@ void Movie::cancelBooking() {
 	showCinemaHall();
 	pickYourSit("What sit do you want to cancel?", row, num);
 
-	for (int i = 3; i > 0; i++)
+	for (int i = 3; i>0 ;i--)
 	{
 		std::cout << "For verification, please enter your...\n\nName: ";
 		std::cin >> verName;
@@ -95,7 +95,7 @@ void Movie::cancelBooking() {
 			break;
 		}
 		else
-			std::cout << "You have typed the wrong data! There is only " << i << " tries left!\n\n";
+			std::cout << "You have typed the wrong data! There is only " << i-1 << " tries left!\n\n";
 	}
 }
 
