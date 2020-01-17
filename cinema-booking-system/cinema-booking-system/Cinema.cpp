@@ -14,25 +14,25 @@ Cinema::Cinema(){}
 
 void Cinema::pickYourFilm() 
 {
-	int it = 0;
-
-	std::cout << "List of films: \n";
-		for (int i = 0; i < listOfFilms.size(); i++)
-		{
-			std::cout << "Film" << " " << i << ": " << listOfFilms[i].nameOfMovie << "\n";
-		}
-
 	std::cout << "\n";
+	std::cout << "Please, enter the number of the film: \n";
 
 	std::cin >> it;
-	listOfFilms[it - 1].addBooking();
+	while (1)
+	{
+		if (it < listOfFilms.size())
+			listOfFilms[it - 1].addBooking();
+		break;
+		else
+			std::cout << "Wrong number! \n";
+	}
 }
 
 void Cinema::addFilm() 
 {
 	std::string name;
 	std::cout << "Type name of movie: ";
-	std::getline(cin, name);
+	std::getline(std::cin, name);
 	std::cout << "\n";
 	Movie newMovie;
 	newMovie.nameOfMovie = name;

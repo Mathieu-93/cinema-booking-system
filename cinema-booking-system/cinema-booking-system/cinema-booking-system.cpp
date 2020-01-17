@@ -30,6 +30,7 @@ int main() {
 		cin >> answer;
 		if (answer == 1)
 		{
+			cinema->showListOfFilms();
 			cinema->pickYourFilm();
 		}
 		else if (answer == 2) movie->cancelBooking();
