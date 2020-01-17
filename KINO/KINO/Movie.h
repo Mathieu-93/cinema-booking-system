@@ -8,7 +8,7 @@
 #include "Client.h"
 
 
-class Movie {
+class Movie : public Sit, Client {
 public:
 	std::string nameOfMovie;
 	Movie();
@@ -20,6 +20,7 @@ public:
 	void showListOfViewers();
 	void removeFromVector(Client);
 	void showMovie();
+
 
 private:
 	static const int rows{ 10 };

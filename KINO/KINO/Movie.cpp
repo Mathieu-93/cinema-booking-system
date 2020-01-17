@@ -34,7 +34,7 @@ void Movie::pickYourSit(std::string comment, int& row, int& num) {
 	std::cout << "Row: ";
 	do {
 		std::cin >> row;
-		if (row < 0 or row > rows) std::cout << "Try again.\n";
+		if (row < 0 || row > rows) std::cout << "Try again.\n";
 	} while (row < 0 or row > rows);
 
 	std::cout << "Number: ";
@@ -64,17 +64,39 @@ void Movie::addBooking() {
 		return;
 	}
 	this->listOfViewers.push_back(cinema_hall[row - 1][num - 1]);
+
+	std::string randomCode = generateRandomCode();
+	cinema_hall[row - 1][num - 1].getRndCode() = randomCode;
+
+	std::cout << "\n Your generated code is: " << randomCode << "\n \n Keep it till you make a check in! \n \n \n";
 }
 
 void Movie::cancelBooking() {
+	std::string verName, verSur, verCode;
 	int row{ 0 }, num{ 0 };
 	showCinemaHall();
 	pickYourSit("What sit do you want to cancel?", row, num);
-	removeFromVector(this->cinema_hall[row - 1][num - 1]);
-	this->cinema_hall[row - 1][num - 1].cancel();
 
-	std::cout << "Your seat has been canceled. \n";
+	for (int i = 3; i > 0; i++)
+	{
+		std::cout << "For verification, please enter your...\n\nName: ";
+		std::cin >> verName;
+		std::cout << "\nSurname: ";
+		std::cin >> verSur;
+		std::cout << "\nAnd Your ticket password: ";
+		std::cin >> verCode;
 
+		if (verName == cinema_hall[row - 1][num - 1].getName() && verSur == cinema_hall[row - 1][num - 1].getSurname() && verCode == cinema_hall[row - 1][num - 1].getRndCode())
+		{
+			removeFromVector(this->cinema_hall[row - 1][num - 1]);
+			this->cinema_hall[row - 1][num - 1].cancel();
+
+			std::cout << "Your seat has been canceled. \n \n";
+			break;
+		}
+		else
+			std::cout << "You have typed the wrong data! There is only " << i << " tries left!\n\n";
+	}
 }
 
 void Movie::checkBooking() {
@@ -94,3 +116,4 @@ void Movie::showListOfViewers() {
 void Movie::showMovie() {
 	std::cout << this->nameOfMovie << "\n";
 }
+

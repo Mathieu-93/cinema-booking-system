@@ -1,4 +1,6 @@
 #include <iostream>
+#include <random>
+#include <chrono>
 #include "Sit.h"
 #include "Movie.h"
 #include "Cinema.h"
@@ -14,6 +16,11 @@ void menu() {
 	cout << " 4. Show cinema hall plan.\n";
 	cout << " 5. Show all viewers going to watch this movie.\n";
 	cout << " 6. Close the app.\n";
+}
+
+void press_a_button() {
+	std::cout << "Press a random buttom to continue... \n";
+	system("pause");
 }
 
 int main() {
@@ -32,15 +39,25 @@ int main() {
 		{
 			cinema->showListOfFilms();
 			cinema->pickYourFilm();
+			press_a_button();
 		}
 		else if (answer == 2)
 		{
 			cinema->showListOfFilms();
 			cinema->cancelYourFilm();
+			press_a_button();
 		}
-		else if (answer == 3) movie->checkBooking();
-		else if (answer == 4) movie->showCinemaHall();
-		else if (answer == 5) movie->showListOfViewers();
+		else if (answer == 3)
+		{
+			movie->checkBooking();
+			press_a_button();
+		}
+		else if (answer == 4)
+		{
+			movie->showCinemaHall();
+			press_a_button();
+		}
+
 		else if (answer != 6) cout << "Try again, I do not know such an option.\n";
 	} while (answer != 6);
 

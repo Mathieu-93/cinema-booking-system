@@ -2,6 +2,8 @@
 #define Sit_h
 
 #include <iostream>
+#include <random>
+#include <chrono>
 #include <string>
 #include "Client.h"
 
@@ -17,8 +19,11 @@ public:
 	void cancel();
 	virtual void show();
 	bool isBooked();
+	std::string getRndCode();
+	std::string generateRandomCode();
 
 private:
+	std::string rndCode=" ";
 	int row;
 	int number;
 	bool booked;
