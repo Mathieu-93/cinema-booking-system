@@ -16,11 +16,13 @@ void Cinema::pickYourFilm()
 {
 	int it = 0;
 
-	std::cout << "List of films: ";
+	std::cout << "List of films: \n";
 		for (int i = 0; i < listOfFilms.size(); i++)
 		{
-			std::cout << "Film" << " " << i << ": " << listOfFilms[i].showMovie() << "\n";
+			std::cout << "Film" << " " << i << ": " << listOfFilms[1].showMovie() << "\n";
 		}
+
+	std::cout << "\n";
 
 	std::cin >> it;
 	listOfFilms[it - 1].addBooking();
@@ -30,10 +32,10 @@ void Cinema::addFilm()
 {
 	std::string name;
 	std::cout << "Type name of movie: ";
-	std::cin >> name;
+	std::getline(cin, name);
 	std::cout << "\n";
 	Movie newMovie;
-	newMovie.nameOfMovie = "name";
+	newMovie.nameOfMovie = name;
 	listOfFilms.push_back(newMovie);
 }
 
