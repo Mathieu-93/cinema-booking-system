@@ -19,6 +19,7 @@ public:
 	void checkBooking();
 	void showListOfViewers();
 	void removeFromVector(Client);
+	void showMovie();
 
 private:
 	static const int rows{ 10 };

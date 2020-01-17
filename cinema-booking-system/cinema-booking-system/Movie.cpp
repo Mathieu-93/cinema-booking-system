@@ -90,5 +90,5 @@ void Movie::showListOfViewers() {
 }
 
 void Movie::showMovie() {
-	std::cout << this->nameOfMovie << "\n"
+	std::cout << this->nameOfMovie << "\n";
 }

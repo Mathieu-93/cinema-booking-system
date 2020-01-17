@@ -16,14 +16,14 @@ void Cinema::pickYourFilm()
 {
 	int it = 0;
 
-	std::cout << "List of films: "
+	std::cout << "List of films: ";
 		for (int i = 0; i < listOfFilms.size(); i++)
 		{
 			std::cout << "Film: " << i << listOfFilms[i].nameOfMovie << "\n";
 		}
 
 	std::cin >> it;
-	listOfFilms[i - 1]->addBooking;
+	listOfFilms[it - 1].addBooking();
 }
 
 void Cinema::addFilm() 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/cinema_booking_system.dir/cinema-booking-system.cpp.o CMakeFiles/cinema_booking_system.dir/Cinema.cpp.o CMakeFiles/cinema_booking_system.dir/Client.cpp.o CMakeFiles/cinema_booking_system.dir/Movie.cpp.o CMakeFiles/cinema_booking_system.dir/Sit.cpp.o  -o cinema_booking_system 
