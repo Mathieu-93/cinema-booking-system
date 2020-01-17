@@ -33,7 +33,11 @@ int main() {
 			cinema->showListOfFilms();
 			cinema->pickYourFilm();
 		}
-		else if (answer == 2) movie->cancelBooking();
+		else if (answer == 2)
+		{
+			cinema->showListOfFilms();
+			cinema->cancelYourFilm();
+		}
 		else if (answer == 3) movie->checkBooking();
 		else if (answer == 4) movie->showCinemaHall();
 		else if (answer == 5) movie->showListOfViewers();

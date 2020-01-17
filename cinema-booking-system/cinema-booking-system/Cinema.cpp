@@ -30,6 +30,24 @@ void Cinema::pickYourFilm()
 	}
 }
 
+void Cinema::cancelYourFilm() {
+	std::cout << "\n";
+	std::cout << "Please, enter the number of the film that u want to cancel the rezervation: \n";
+	int it = 0;
+	std::cin >> it;
+	while (1)
+	{
+		if (it < listOfFilms.size())
+		{
+			listOfFilms[it - 1].cancelBooking();
+			break;
+		}
+		else
+			std::cout << "Wrong number! \n";
+	}
+
+}
+
 void Cinema::addFilm() 
 {
 	std::string name;
@@ -44,6 +62,7 @@ void Cinema::addFilm()
 void Cinema::showListOfFilms() 
 {
 	for (std::vector<Movie>::iterator it = this->listOfFilms.begin(); it != this->listOfFilms.end(); it++) {
+		cout << "Film " << it << " :";
 		it->showMovie();
 		std::cout << "\n";
 	}

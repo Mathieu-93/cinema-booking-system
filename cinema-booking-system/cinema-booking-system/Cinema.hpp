@@ -12,6 +12,7 @@ class Cinema : public Movie {
 public:
 	Cinema();
 	void pickYourFilm();
+	void cancelYourFilm();
 	void showListOfFilms();
 	void addFilm();
 
