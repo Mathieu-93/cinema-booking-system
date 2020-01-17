@@ -1,0 +1,4 @@
+﻿  Cinema.cpp
+C:\Users\Karol\Desktop\KINO\KINO\Cinema.cpp(23,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Karol\Desktop\KINO\KINO\Cinema.cpp(40,10): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  KINO.vcxproj -> C:\Users\Karol\Desktop\KINO\Debug\KINO.exe
