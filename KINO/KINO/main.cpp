@@ -7,6 +7,10 @@
 
 using namespace std;
 
+void choose() {
+	cout << "Pick option number: ";
+}
+
 void menu() {
 	cout << "\n      * * * * * Welcome to cinema electronic ticket system * * * * *      \n\n";
 	cout << "What do you want to do? Choose your option. \n";
@@ -16,6 +20,7 @@ void menu() {
 	cout << " 4. **W REMONCIE JESZCZE**\n";
 	cout << " 5. Admin panel.\n";
 	cout << " 6. Close the app.\n";
+	choose();
 }
 
 void admin_menu() {
@@ -25,7 +30,9 @@ void admin_menu() {
 	cout << " 2. Delete a film.\n";
 	cout << " 3. Check all bookings.\n";
 	cout << " 4. Close admin panel.\n";
+	choose();
 }
+
 
 
 int main() {
@@ -46,14 +53,12 @@ int main() {
 			cinema->showListOfFilms();
 			cinema->pickYourFilm();
 			system("pause");
-			system("cls");
 		}
 		else if (answer == 2)
 		{
 			cinema->showListOfFilms();
 			cinema->cancelYourFilm();
 			system("pause");
-			system("cls");
 		}
 		else if (answer == 3) movie->checkBooking();
 		else if (answer == 4) movie->showCinemaHall();
@@ -66,18 +71,15 @@ int main() {
 				{
 					cinema->addFilm();
 					system("pause");
-					system("cls");
 				}
 				else if (answer2 == 2)
 				{
 					cinema->deleteFilm();
 					system("pause");
-					system("cls");
 				}
 				else if (answer2 == 3)
 				{
 					system("pause");
-					system("cls");
 				}
 			} while (answer2 != 4); cout << "Try again, I do not know such an option.\n";
 		}

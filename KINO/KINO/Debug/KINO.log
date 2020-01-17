@@ -2,11 +2,4 @@
 C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Movie.h(11,22): warning C4584: „Movie”: klasa bazowa „Client” jest już klasą bazową „Sit”
 C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Client.h(7): message : zobacz deklarację „Client”
 C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Sit.h(10): message : zobacz deklarację „Sit”
-  Movie.cpp
-C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Movie.h(11,22): warning C4584: „Movie”: klasa bazowa „Client” jest już klasą bazową „Sit”
-C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Client.h(7): message : zobacz deklarację „Client”
-C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\KINO\Sit.h(10): message : zobacz deklarację „Sit”
-  Sit.cpp
-  Generowanie kodu...
-  LINK : nie znaleziono elementu C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\Debug\KINO.exe ani nie zosta│ on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pe│na konsolidacja
   KINO.vcxproj -> C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\KINO\Debug\KINO.exe
