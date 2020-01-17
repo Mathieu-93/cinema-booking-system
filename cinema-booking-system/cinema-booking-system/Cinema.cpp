@@ -21,8 +21,10 @@ void Cinema::pickYourFilm()
 	while (1)
 	{
 		if (it < listOfFilms.size())
+		{
 			listOfFilms[it - 1].addBooking();
-		break;
+			break;
+		}
 		else
 			std::cout << "Wrong number! \n";
 	}
