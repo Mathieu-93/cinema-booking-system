@@ -15,6 +15,8 @@ public:
 	void cancelYourFilm();
 	void showListOfFilms();
 	void addFilm();
+	void deleteFilm();
+	void checkFilm();
 
 private:
 	std::vector <Movie> listOfFilms;

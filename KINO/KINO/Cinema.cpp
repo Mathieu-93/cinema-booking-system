@@ -52,11 +52,45 @@ void Cinema::addFilm()
 {
 	std::string name;
 	std::cout << "Type name of movie: ";
+	if (std::cin.peek() == '\n' || std::cin.peek() == '\r') {
+		std::cin.get();
+	}
 	std::getline(std::cin, name);
 	std::cout << "\n";
 	Movie newMovie;
 	newMovie.nameOfMovie = name;
 	listOfFilms.push_back(newMovie);
+}
+
+void Cinema::deleteFilm()
+{
+	int it;
+	std::cout << "\n";
+	std::cout << "Please, enter the number of the film that u want to delete: \n";
+	showListOfFilms();
+	std::cin >> it;
+
+	while (1)
+	{
+		if (it < listOfFilms.size())
+		{
+			listOfFilms.erase(listOfFilms.begin() + it);
+			break;
+		}
+		else
+			std::cout << "Wrong number! \n";
+	}
+
+}
+
+void Cinema::checkFilm()
+{
+	int it;
+	std::cout << "\n";
+	std::cout << "Please, enter the number of the film that u want to check: \n";
+	showListOfFilms();
+	std::cin >> it;
+	listOfFilms[it - 1].cancelBooking();
 }
 
 void Cinema::showListOfFilms()
