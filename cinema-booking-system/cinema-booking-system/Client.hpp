@@ -21,7 +21,7 @@ public:
 	virtual void show();
 	void show(std::string*, std::string*);
 	bool operator==(Client c) {
-		bool res = ((this->getName() == c.getName()) and (this->getSurname() == c.getSurname()));
+		bool res = ((this->getName() == c.getName()) && (this->getSurname() == c.getSurname()));
 		return res;
 	}
 	friend std::ostream& operator<< (std::ostream& os, const Client& cli);
