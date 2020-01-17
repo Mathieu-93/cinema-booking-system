@@ -24,7 +24,7 @@ void Cinema::pickYourFilm()
 
 void Cinema::addFilm() 
 {
-	string name;
+	std::string name;
 	std::cout << "Type name of movie: ";
 	std::cin >> name;
 	std::cout << "\n";

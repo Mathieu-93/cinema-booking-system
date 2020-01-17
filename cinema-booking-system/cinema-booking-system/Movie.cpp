@@ -7,7 +7,7 @@
 #include "Movie.hpp"
 #include "Sit.hpp"
 
-Movie::Movie(string name = "") :nameOfMovie{ name } {
+Movie::Movie(std::string name = "") :nameOfMovie{ name } {
 
 	for (size_t i = 0; i < this->rows; i++)
 		for (size_t j = 0; j < this->nums; j++) {

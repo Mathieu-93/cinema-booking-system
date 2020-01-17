@@ -9,7 +9,7 @@
 
 class Movie {
 public:
-	string nameOfMovie;
+	std::string nameOfMovie;
 	Movie();
 	void addNameOfMovie();
 	void showCinemaHall();
