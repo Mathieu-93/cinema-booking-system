@@ -13,15 +13,20 @@ void menu() {
 	cout << " 1. Book a sit.\n";
 	cout << " 2. Cancel your booking.\n";
 	cout << " 3. Check your booking.\n";
-	cout << " 4. Show cinema hall plan.\n";
-	cout << " 5. Show all viewers going to watch this movie.\n";
+	cout << " 4. **W REMONCIE JESZCZE**\n";
+	cout << " 5. Admin panel.\n";
 	cout << " 6. Close the app.\n";
 }
 
-void press_a_button() {
-	std::cout << "Press a random buttom to continue... \n";
-	system("pause");
+void admin_menu() {
+	cout << "\n      * * * * * Welcome to cinema electronic ticket system * * * * *      \n\n";
+	cout << "What do you want to do master? Choose your option. \n";
+	cout << " 1. Add a new film.\n";
+	cout << " 2. Delete a film.\n";
+	cout << " 3. Check all bookings.\n";
+	cout << " 4. Close admin panel.\n";
 }
+
 
 int main() {
 	Sit booking;
@@ -30,7 +35,8 @@ int main() {
 	cinema->addFilm();
 	cinema->addFilm();
 	cinema->addFilm();
-	int answer{ 0 };
+	int answer = 0;
+	int answer2 = 0;
 
 	do {
 		menu();
@@ -39,29 +45,47 @@ int main() {
 		{
 			cinema->showListOfFilms();
 			cinema->pickYourFilm();
-			press_a_button();
+			system("pause");
+			system("cls");
 		}
 		else if (answer == 2)
 		{
 			cinema->showListOfFilms();
 			cinema->cancelYourFilm();
-			press_a_button();
+			system("pause");
+			system("cls");
 		}
-		else if (answer == 3)
+		else if (answer == 3) movie->checkBooking();
+		else if (answer == 4) movie->showCinemaHall();
+		else if (answer == 5)
 		{
-			movie->checkBooking();
-			press_a_button();
+			do {
+				admin_menu();
+				cin >> answer2;
+				if (answer2 == 1)
+				{
+					cinema->addFilm();
+					system("pause");
+					system("cls");
+				}
+				else if (answer2 == 2)
+				{
+					cinema->deleteFilm();
+					system("pause");
+					system("cls");
+				}
+				else if (answer2 == 3)
+				{
+					system("pause");
+					system("cls");
+				}
+			} while (answer2 != 4); cout << "Try again, I do not know such an option.\n";
 		}
-		else if (answer == 4)
-		{
-			movie->showCinemaHall();
-			press_a_button();
-		}
-
 		else if (answer != 6) cout << "Try again, I do not know such an option.\n";
 	} while (answer != 6);
 
 	delete movie;
+	delete cinema;
 
 	return 0;
 }
