@@ -52,9 +52,7 @@ void Cinema::addFilm()
 {
 	std::string name;
 	std::cout << "Type name of movie: ";
-	if (std::cin.peek() == '\n' || std::cin.peek() == '\r') {
-		std::cin.get();
-	}
+	std::cin.get();
 	std::getline(std::cin, name);
 	std::cout << "\n";
 	Movie newMovie;
