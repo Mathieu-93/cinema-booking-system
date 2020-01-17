@@ -9,7 +9,9 @@
 
 class Movie {
 public:
+	string nameOfMovie;
 	Movie();
+	void addNameOfMovie();
 	void showCinemaHall();
 	void pickYourSit(std::string, int&, int&);
 	void addBooking();
@@ -21,6 +23,7 @@ public:
 private:
 	static const int rows{ 10 };
 	static const int nums{ 20 };
+
 
 	Sit cinema_hall[rows][nums];
 	std::vector <Client> listOfViewers;

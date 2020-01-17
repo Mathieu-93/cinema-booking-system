@@ -1,10 +1,3 @@
-/*
-	Name: Maciej Czy¿kowski
-	Index number: 300198
-	Coordinator: mgr Wiktor Kuœmirek
-	Project 4: Cinema
-*/
-
 #ifndef CINEMA_HPP
 #define CINEMA_HPP
 
@@ -13,24 +6,18 @@
 #include <vector>
 #include "Sit.hpp"
 #include "Client.hpp"
+#include "Movie.hpp"
 
 class Cinema {
 public:
 	Cinema();
-	void showCinemaHall();
-	void pickYourSit(std::string, int&, int&);
-	void addBooking();
-	void cancelBooking();
-	void checkBooking();
-	void showListOfViewers();
-	void removeFromVector(Client);
+	void pickYourFilm();
+	void showListOfFilms();
+	void addFilm();
 
 private:
-	static const int rows{ 10 };
-	static const int nums{ 20 };
-
-	Sit cinema_hall[rows][nums];
-	std::vector <Client> listOfViewers;
+	int numberOfFilms;
+	std::vector <Movie> listOfFilms;
 };
 
 #endif

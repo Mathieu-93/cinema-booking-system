@@ -7,13 +7,14 @@
 #include "Movie.hpp"
 #include "Sit.hpp"
 
-Movie::Movie() {
+Movie::Movie(string name = "") :nameOfMovie{ name } {
 
 	for (size_t i = 0; i < this->rows; i++)
 		for (size_t j = 0; j < this->nums; j++) {
 			this->cinema_hall[i][j] = Sit(i + 1, j + 1, false);
 		}
 }
+
 
 void Movie::showCinemaHall() {
 	std::cout << "   ";

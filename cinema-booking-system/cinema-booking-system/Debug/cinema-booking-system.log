@@ -1,0 +1,10 @@
+﻿  cinema-booking-system.cpp
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: __thiscall Client::Client(void)" (??0Client@@QAE@XZ) przywołany w funkcji "public: __thiscall Sit::Sit(void)" (??0Sit@@QAE@XZ)
+cinema-booking-system.obj : error LNK2001: nierozpoznany symbol zewnętrzny "public: virtual void __thiscall Sit::show(void)" (?show@Sit@@UAEXXZ)
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: __thiscall Movie::Movie(void)" (??0Movie@@QAE@XZ) przywołany w funkcji _main
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: void __thiscall Movie::showCinemaHall(void)" (?showCinemaHall@Movie@@QAEXXZ) przywołany w funkcji _main
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: void __thiscall Movie::addBooking(void)" (?addBooking@Movie@@QAEXXZ) przywołany w funkcji _main
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: void __thiscall Movie::cancelBooking(void)" (?cancelBooking@Movie@@QAEXXZ) przywołany w funkcji _main
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: void __thiscall Movie::checkBooking(void)" (?checkBooking@Movie@@QAEXXZ) przywołany w funkcji _main
+cinema-booking-system.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: void __thiscall Movie::showListOfViewers(void)" (?showListOfViewers@Movie@@QAEXXZ) przywołany w funkcji _main
+C:\Users\Karol\Desktop\Projekt_kino\cinema-booking-system\cinema-booking-system\Debug\cinema-booking-system.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 8
