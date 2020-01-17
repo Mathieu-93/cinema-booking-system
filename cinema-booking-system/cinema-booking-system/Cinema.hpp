@@ -8,7 +8,7 @@
 #include "Client.hpp"
 #include "Movie.hpp"
 
-class Cinema {
+class Cinema : public Movie {
 public:
 	Cinema();
 	void pickYourFilm();

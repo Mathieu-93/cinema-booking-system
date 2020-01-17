@@ -7,8 +7,7 @@
 #include "Movie.hpp"
 #include "Sit.hpp"
 
-Movie::Movie(std::string name = "") :nameOfMovie{ name } {
-
+Movie::Movie(){
 	for (size_t i = 0; i < this->rows; i++)
 		for (size_t j = 0; j < this->nums; j++) {
 			this->cinema_hall[i][j] = Sit(i + 1, j + 1, false);
@@ -88,4 +87,8 @@ void Movie::showListOfViewers() {
 		it->show();
 		std::cout << "\n";
 	}
+}
+
+void Movie::showMovie() {
+	std::cout << Movie::nameOfMovie << "\n"
 }

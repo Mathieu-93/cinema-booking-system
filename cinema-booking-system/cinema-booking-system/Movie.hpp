@@ -7,11 +7,11 @@
 #include "Sit.hpp"
 #include "Client.hpp"
 
+
 class Movie {
 public:
 	std::string nameOfMovie;
 	Movie();
-	void addNameOfMovie();
 	void showCinemaHall();
 	void pickYourSit(std::string, int&, int&);
 	void addBooking();

@@ -9,16 +9,15 @@
 #include "Client.hpp"
 
 
-Cinema:Cinema(){}
+Cinema::Cinema(){}
 
 
 void Cinema::pickYourFilm() 
 {
 	std::cout << "List of films: "
-	
 		for (int i = 0; i < listOfFilms.size(); i++)
 		{
-			std::cout << "Film: " << i << listOfFilms.begin() + i << "\n";
+			std::cout << "Film: " << i << listOfFilms[i].nameOfMovie << "\n";
 		}
 }
 
@@ -28,14 +27,15 @@ void Cinema::addFilm()
 	std::cout << "Type name of movie: ";
 	std::cin >> name;
 	std::cout << "\n";
-	Movie newMovie(name);
+	Movie newMovie;
+	newMovie.nameOfMovie = "name";
 	listOfFilms.push_back(newMovie);
 }
 
 void Cinema::showListOfFilms() 
 {
 	for (std::vector<Movie>::iterator it = this->listOfFilms.begin(); it != this->listOfFilms.end(); it++) {
-		it->show();
+		it->showMovie();
 		std::cout << "\n";
 	}
 }
