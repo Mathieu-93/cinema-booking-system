@@ -28,7 +28,7 @@ void admin_menu() {
 	cout << "What do you want to do master? Choose your option. \n";
 	cout << " 1. Add a new film.\n";
 	cout << " 2. Delete a film.\n";
-	cout << " 3. Check all bookings.\n";
+	cout << " 3. **W REMONCIE JESZCZE**\n";
 	cout << " 4. Close admin panel.\n";
 	choose();
 }
