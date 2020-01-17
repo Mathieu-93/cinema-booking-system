@@ -16,7 +16,6 @@ public:
 	void addFilm();
 
 private:
-	int numberOfFilms;
 	std::vector <Movie> listOfFilms;
 };
 
